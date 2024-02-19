@@ -68,7 +68,7 @@ public class basicNavigation {
     }
 
     @Test
-    public void toProfile(){
+    public void toProfile() {
         click(By.cssSelector(".sc-gsTDqH > button:nth-child(1)"));
         sendKeys(By.name("email"), "test@protonmail.com");
         sendKeys(By.name("password"), "Intern1!");
@@ -78,7 +78,7 @@ public class basicNavigation {
     }
 
     @Test
-    public void toCart(){
+    public void toCart() {
         click(By.cssSelector(".sc-gsTDqH > button:nth-child(1)"));
         sendKeys(By.name("email"), "test@protonmail.com");
         sendKeys(By.name("password"), "Intern1!");
@@ -86,6 +86,7 @@ public class basicNavigation {
         click(By.cssSelector(".sc-dQpIV"));
         Assert.assertEquals("https://eclectic-cucurucho-2ae5e1.netlify.app/cart", driver.getCurrentUrl());
     }
+
     @Test
     public void toAboutBook() {
         click(By.cssSelector("div.sc-fodVRF:nth-child(1) > div:nth-child(1) > div:nth-child(2)"));
